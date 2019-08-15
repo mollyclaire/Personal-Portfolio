@@ -127,7 +127,8 @@ p {
 
 #about-me-section {
   /* padding: 80px; */
-  background-image: url(../images/me-photo-dark.jpg);
+  background-image: url(../images/bw-me.jpg);
+  background-size: cover;
   color: #fff !important;
   min-height: 100vh;
 }
@@ -176,6 +177,8 @@ span {
   background-color: #c0ca33;
 }
 
+/* Media Queries */ 
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -190,7 +193,26 @@ span {
   #index-banner .section {
     top: 0;
   }
+  #about-me-section {
+    object-fit: fill;
+  }
+  .title-1{
+    margin-left: 1.8rem;
+  }
+  .quote {
+    margin: 2rem;
+    font-family: 'Mukta Malar', sans-serif;
+    font-size: 1.3rem;
+  }
+  
+  .body-text {
+    margin: 2rem;
+    font-family: 'Mukta Malar', sans-serif;
+    padding-right: 0rem;
+  }
+    
 }
+
 
 .icon-block {
   padding: 0 15px;
