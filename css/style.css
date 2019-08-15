@@ -187,6 +187,20 @@ span {
   #index-banner .section {
     top: 10%;
   }
+  .quote {
+    margin: 2rem;
+    font-family: 'Mukta Malar', sans-serif;
+    font-size: 1.3rem;
+  }
+  
+  .body-text {
+    margin: 2rem;
+    font-family: 'Mukta Malar', sans-serif;
+    padding-right: 0rem;
+  }
+  .title-1 {
+    margin-left: 8.5rem;
+  }
 }
 
 @media only screen and (max-width : 600px) {
