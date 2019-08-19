@@ -155,7 +155,12 @@ p {
 
 #connect-section {
   background-color: #000;
+  height: 100%;
 
+}
+
+#links {
+  padding: 1.5rem;
 }
 
 .parallax-container {
