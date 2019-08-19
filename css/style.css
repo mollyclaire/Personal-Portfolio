@@ -216,7 +216,8 @@ span {
     object-fit: fill;
   }
   .title-1{
-    margin-left: 1.8rem;
+    margin-left: 3.5rem;
+    padding-left: 0px;
   }
   .quote {
     margin: 2rem;
