@@ -1,268 +1,152 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-nav {
-  background-color: transparent !important;
+html {
+  box-sizing: border-box;
+  height: 100vh;
+  scroll-behavior: smooth;
 }
-
-blockquote {
-  font-size: 3.5rem;
-  padding: 8rem;
-  border-left: none;
+/* Home Page */
+.left {
+  background-image: url("../images/bw-2.png");
+  width: 100%;
+  height: 50vh;
+  position: relative;
 }
-cite {
-  display: block;
-  text-align: right;
-  margin-right: 5em;
-  font-family: 'Mukta Malar', sans-serif;
-  margin-top: 1rem;
-  font-size: 2rem;
-  color: #000;
-  font-style: normal;
-  letter-spacing: .2rem;
-}
-blockquote q {
-  font-family: 'Playfair Display', sans-serif;
-  font-style: italic;
-  letter-spacing: .08rem;
-}
-blockquote q span { 
-  will-change: opacity, filter;
+.left:hover .overlay-effect {
   opacity: 0;
-  filter: blur(0px);
+  cursor: pointer;
 }
-q {
-  quotes: "“" "”" "‘" "’";
+.overlay-effect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transition: .5s ease;
+  background-color: rgba(80, 123, 209, 0.6);
+  overflow:hidden;
 }
-q:before {
-    content: open-quote;
-    margin-right: .8rem;
+.right {
+  width: 100%;
+  height: 50vh; 
 }
-q:after {
-  content: close-quote;
-}
-q:before, q:after {
-  color: #000;
-  font-size: 4rem;
-}
-
-#test {
-  min-height: 100vh;
-  background: #fff;
-  color: #000;
+.links {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-
-/* nav ul a,
-nav .brand-logo {
-  color: #fff !important;
-} */
-
-.brand-logo {
-  color: #c0ca33 !important;
-  font-family: 'Mukta Malar', sans-serif;
-  font-size: 1.5rem !important;
-}
-
-.circle {
-  width: 6rem;
-  margin-top: 0.4rem;
-
-}
-
 li {
-  margin-top: 0.8rem;
+  list-style-type: none;
+  margin: 1em;
 }
-
-p {
-  line-height: 2rem;
+.header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
 }
-
-.quote {
-  margin-left: 10rem;
-  font-family: 'Mukta Malar', sans-serif;
-  font-size: 1.3rem;
-}
-
-.body-text {
-  margin-left: 10rem;
-  font-family: 'Mukta Malar', sans-serif;
-  padding-right: 10rem;
-}
-/* .sidenav-trigger {
-  color: #26a69a;
-} */
-
 .title {
-  color:#fff !important;
-  font-family: 'Playfair Display', sans-serif;
-  padding-bottom: 20px;
-  margin-top: 3rem;
-  font-size: 4rem;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.mid {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.lower {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.name {
+  font-size: 3.5em;
+  letter-spacing: 2px;
+}
+.profile {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9em;
+}
+.circle {
+height: 30px;
+width: 30px;
+background-color: #3366cc;
+border-radius: 50%;
+display: inline-block;
+margin-bottom: 1.5em;
+}
+.quote-container {
+  height: 32vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.quote {
+  font-size: .9em;
 }
 
-.title-1 {
-  color: #fff;
-  font-family: "Playfair Display", sans-serif;
-  padding: 100px 100px 50px 100px;
-  margin-left: 4rem;
-  font-size: 7rem;
+/* About Me Page */
+.left-about {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
 }
-
-.title-2 {
-  color:#000;
-  font-family: 'Playfair Display', sans-serif;
-  padding-bottom: 20px;
-  margin-top: 3rem;
-  /* margin-left: 4rem; */
-  font-size: 4rem;
+.right-about {
+  width: 100%;
+  height: 50vh;
 }
-
-#about-me-section {
-  /* padding: 80px; */
-  background-image: url(../images/bw-me.jpg);
-  background-size: cover;
-  color: #fff !important;
-  min-height: 100vh;
-}
-
-#connect-section {
-  background-image: url(../images/background-2.png);
-  height: 100%;
-}
-
-.work-text {
-  color: #c0ca33 !important;
-}
-
-.center-align {
-  margin-left: 7rem;
-  margin-right: 7rem;
-}
-
-.wrapper {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#connect-section {
-  background-color: #000;
-  height: 100%;
-
-}
-
-#links {
-  padding: 1.5rem;
-}
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  
-.parallax-container .section {
-    width: 100%;
-}
-
-span {
-  margin: 5rem 3rem 5rem 3rem;
+.about-me {
+  font-size: 4em;
+  font-family: 'Montserrat', sans-serif;
+  color: #3366cc;
+  /* writing-mode: vertical-rl;
+  text-orientation: sideways-right; */
   
 }
-.footer-copyright {
-  background-color: #c0ca33;
+.profile-about {
+  padding: 3em 15em 10em 15em;
+}
+.title-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Media Queries */ 
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-  .quote {
-    margin: 2rem;
-    font-family: 'Mukta Malar', sans-serif;
-    font-size: 1.3rem;
-  }
-  
-  .body-text {
-    margin: 2rem;
-    font-family: 'Mukta Malar', sans-serif;
-    padding-right: 0rem;
-  }
-  .title-1 {
-    margin-left: 8.5rem;
-  }
+/* Work Page */
+.left-work {
+  width: 100%;
+  height: 50vh;
+  border: 1px solid black;
 }
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-  #about-me-section {
-    object-fit: fill;
-  }
-  .title-1{
-    margin-left: 3.5rem;
-    padding-left: 0px;
-  }
-  .quote {
-    margin: 2rem;
-    font-family: 'Mukta Malar', sans-serif;
-    font-size: 1.3rem;
-  }
-  
-  .body-text {
-    margin: 2rem;
-    font-family: 'Mukta Malar', sans-serif;
-    padding-right: 0rem;
-  }
-    
+.right-work {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 6em;
 }
-
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
-}
-
-/* Test */
-
-/* .title{
-  color: #1a1a1a;
-  text-align: center;
-  margin-bottom: 10px;
-} */
-
 .content {
   position: relative;
+  /* display: inline-block; */
   width: 100%;
-  /* max-width: 400px; */
+  max-width: 400px;
   margin: auto;
+  margin-top: 2em;
   overflow: hidden;
+  border: 2px, solid, #3366cc;
 }
-
 .content .content-overlay {
-  background: rgba(0,0,0,0.7);
+  background: rgba(80, 123, 209, 0.8);
   position: absolute;
   height: 99%;
   width: 100%;
@@ -275,15 +159,12 @@ footer.page-footer {
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-
 .content:hover .content-overlay{
   opacity: 1;
 }
-
 .content-image{
   width: 100%;
 }
-
 .content-details {
   position: absolute;
   text-align: center;
@@ -300,27 +181,88 @@ footer.page-footer {
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-
 .content:hover .content-details{
   top: 50%;
   left: 50%;
   opacity: 1;
 }
-
 .content-details h3{
   color: #fff;
   font-weight: 500;
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   /* letter-spacing: 0.09em; */
   margin-bottom: 0.5em;
   /* text-transform: uppercase; */
 }
-
 .content-details p{
   color: #fff;
   font-size: 0.8em;
 }
-
 .fadeIn-bottom{
   top: 80%;
+}
+
+/* Contact Page */
+#connect-section {
+  margin-top: 15em;
+  
+}
+.title-connect {
+  font-size: 5em;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+#links {
+  margin-top: 6em;
+}
+.left-connect {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+.icons {
+  margin: .5em;
+  
+}
+#email {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1em;
+}
+a:link {
+  color: #3366cc;
+}
+a:hover {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+.right-connect {
+  background-image: url("../images/connect.png");
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  overflow: hidden
+  
+}
+
+/* Thought Page */
+.thoughts-connect {
+  font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+  .left, .right, .left-about, .right-about, .right-work, .left-work, .right-connect, .left-connect {
+      height: 100vh;
+  }
 }

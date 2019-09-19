@@ -1,176 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Molly Graham</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
-  <!-- Hover -->
-  <link rel="stylesheet" href="css/imagehover.min.css">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Mukta+Malar&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/33e54b9405.js"></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/33e54b9405.js"></script>
+    <title>Molly Graham</title>
 </head>
 
 <body>
-  <!-- Nav Bar -->
-  <div id="about-me-section">
-  <nav class="transparent z-depth-0" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo hide-on-large-only"><img src="images/icon-me.png" class="circle responsive-img"></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#about-me-section"></a></li>
-        <li><a href="#work-section">My Work</a></li>
-        <li>|</li>
-        <li><a href="#connect-section">Let's Connect</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#about-me-section">About Me</a></li>
-        <li><a href="#work-section">My Work</a></li>
-        <li><a href="#connect-section">Let's Connect</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-
- <div class="section" id="bio">
-  
-        <div class="row">
-          <div class="col s12">
-            <h3 class="title-1"><em>Hello.</em></h3>
-          </div>
+    <!-- First Main Page/Section -->
+    <div class="row no-gutters">
+        <div class="col-md-6 no-gutters">
+            <div class="left">
+                <div class="overlay-effect h-100 w-100"></div>
+                <!-- <img src="./images/bw-2.jpeg" alt="black and white photo of Molly"/> -->
+            </div>
         </div>
-
-        <div class="row">
-          <div class="col s12">
-            <p class="quote"><em>"I am always doing that which I cannot do, so that I may learn how to do it."</em>
-            <br/> - Pablo Picasso</p>
-            <p class="body-text">My name is <strong>Molly</strong>, and I am a web developer with an education in fine arts and professional background in project management. I recently graduated from the Full Time Web Development Course at the University of Texas Coding Bootcamp. I'm passionate about learning and therefore drawn to the constantly evolving field of technology. Having observed and studied meaningful connections between an artist and their work, I aim to apply similar critical thinking skills to the beautiful and functional products I create.</p>
-          </div>
-        </div>
-  
-      </div>
-
-  </div>
-
-    <div class="section" id="work-section">
-    
-      <div class="row">
-        <div class="col s12">
-            <h3 class="title-2 center-align"><em>My Work</em></h3> 
-            <p class="quote center-align">Check out some of my recent projects below.</p>
-        </div>
-      </div>
-
-<div class="container">
-
-      <div class="row">
-          <div class="col s12 m6 l6">
-              <div class="content">
-                  <a href="https://github.com/mollyclaire/Bamazon" target="_blank">
-                    <div class="content-overlay"></div>
-                    <img class="content-image" src="images/bamazon-image.jpg">
-                    <div class="content-details fadeIn-bottom">
-                      <h3 class="content-title">Bamazon</h3>
-                      <p class="content-text">A simple CLI app that utilizes MySQL.</p>
-                    </div>
-                  </a>
+        <div class="col-md-6 no-gutters">
+            <div class="right">
+                <div class="row no-gutters header">
+                    <ul class="links smooth-scroll">
+                        <li id="about"><a href="#about-link">About</a></li>
+                        <li id="work"><a href="#work-link">Work</a></li>
+                        <li id="contact"><a href="#connect-section">Contact</a></li>
+                        <!-- <li id="thoughts"><a href="contact.html">Thoughts</a></li> -->
+                    </ul>
                 </div>
-          </div>
-
-          <div class="col s12 m6 l6">
-              <div class="content">
-                  <a href="https://github.com/mollyclaire/FriendFinder" target="_blank">
-                    <div class="content-overlay"></div>
-                    <img class="content-image" src="images/survey-image.jpg">
-                    <div class="content-details fadeIn-bottom">
-                      <h3 class="content-title">Friend Finder</h3>
-                      <p class="content-text">A web app created with my own server-side APIs using Express.js.</p>
+                <div class="row no-gutters mid">
+                    <div class="title">
+                        <div class="name">
+                            <span><strong>Molly Graham</strong></span>
+                        </div>
+                        <div class="profile">
+                            <p>Web developer &#8226; Art Enthusiast &#8226; Lifelong learner</p>
+                        </div>
                     </div>
-                  </a>
+                </div>
+                <div class="row no-gutters lower">
+                    <div class="quote-container">
+                        <span class="circle"></span>
+                        <div class="quote">
+                            <p>"I am always doing that which I cannot do, in order that I may learn how to do it."</p>
+                        </div>
+                        <span class="quote">- Pablo Picasso</span>
+                    </div>
                 </div>
             </div>
-      </div>
+        </div>
+    </div>
 
-      <div class ="row">
-            <div class="col s12 m6 l6">
+    <!-- About Me Section -->
+    <div class="row no-gutters" id="about-link">
+        <div class="col-md-12 no-gutters">
+            <div class="left-about">
+                <div class="title-about">
+                    <div class="about-me text-center">
+                        <span><strong>About Me</strong></span>
+                    </div>
+                    <div class="profile-about">
+                        <p>I am a web developer with an education in fine arts and professional background in project
+                            management. I recently graduated from the Full Time Web Development Course at the University
+                            of Texas Coding Bootcamp. I'm passionate about learning and therefore drawn to the
+                            constantly evolving field of technology. Having observed and studied meaningful connections
+                            between an artist and their work, I aim to apply similar critical thinking skills to the
+                            beautiful and functional products I create.
+                        </p>
+                        <p>When I'm not coding or buried in a book, you can find me running around Town Lake or enjoying
+                            a glass of wine with my husband.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col-md-4 no-gutters">
+        <div class="right-about">
+            <div class="overlay-effect h-100 w-100"></div>
+            <div class="title-about">
+                <div class="about-me text-center">
+                    <span><strong>About Me</strong></span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    </div>
+
+    <!-- Work Section -->
+    
+<div id="work-link">
+    <div class="row no-gutters">
+        <div class="col-md-12 no-gutters">
+            <div class="about-me text-center">
+                <span><strong>My Work</strong></span>
+            </div>
+        </div>
+    </div>
+    <div class="right-work">
+        <div class="row">
+            <div class="col sm12 md6 lg6">
                 <div class="content">
                     <a href="https://github.com/devjain32/project-three-backend" target="_blank">
-                      <div class="content-overlay"></div>
-                      <img class="content-image" src="images/plant-pal.jpg">
-                      <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Plant Pal</h3>
-                        <p class="content-text">A full-stack React app designed to help users grow a healthy garden. This was created in collaboration with bootcamp colleages.</p>
-                      </div>
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="images/plant-pal.png">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Plant Pal</h3>
+                            <p class="content-text">A full-stack MERN app created in collaboration with boot camp
+                                colleagues. React components and UI designed and developed by me.</p>
+                        </div>
                     </a>
                 </div>
             </div>
-      
-            <div class="col s12 m6 l6">
+
+            <div class="col sm12 md6 lg6">
                 <div class="content">
-                    <a href="https://github.com/mollyclaire/Mongo-Scraper" target="_blank">
-                      <div class="content-overlay"></div>
-                      <img class="content-image" src="images/mongo-scraper.jpg">
-                      <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Mongo-Scraper</h3>
-                        <p class="content-text">A web app that uses Mongoose and Cherrio to scrape news headlines from ArtNews.</p>
-                      </div>
+                    <a href="https://github.com/mollyclaire/FriendFinder" target="_blank">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="images/friend-finder.png">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Friend Finder</h3>
+                            <p class="content-text">A web app created with my own server-side APIs using Express.js.
+                                Technologies used: Express, Bootstrap, JavaScript</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col sm12 md6 lg6">
+                <div class="content">
+                    <a href="https://github.com/mollyclaire/Flashcard-App" target="_blank">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="images/flashcard-app.png">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Flashcard App</h3>
+                            <p class="content-text">A simple React app created to help me prepare for technical
+                                interviews. Technologies used: React, Firebase</p>
+                        </div>
                     </a>
                 </div>
             </div>
 
-        
-
+            <div class="col sm12 md6 lg6">
+                <div class="content">
+                    <a href="https://github.com/mollyclaire/Art-History" target="_blank">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="images/art-history.png">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Art History</h3>
+                            <p class="content-text">The first in a series of applications designed to teach others about
+                                art history. Technologies used: HTML, CSS, JavaScript</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-      </div>
-      
+        </div>
+    </div>
+</div>
+   
+
+<!-- Contact Page -->
+    <div id="connect-section">
+        <div class="row no-gutters">
+            <div class="col-md-6 no-gutters">
+                <div class="left-about">
+                    <div class="left-connect">
+                        <div class="title-connect text-center">
+                            <span><strong>Say Hello!</strong></span>
+                        </div>
+                        <div id="email" class="text-center">
+                            Send an email to <a href="mailto:mollyclaire.graham@gmail.com"
+                                target="_top"><em>mollyclaire.graham@gmail.com</em></a>
+                        </div>
+                        <div id="links" class="text-center">
+                            <a href="https://www.linkedin.com/in/mollyclaire/" target="_blank"><span
+                                    style="color: black; font-size: 2rem" class="icons"><i
+                                        class="fab fa-linkedin-in"></i></span></a>
+                            <a href="https://github.com/mollyclaire" target="_blank"><span
+                                    style="color: black; font-size: 2rem" class="icons"><i
+                                        class="fab fa-github"></i></span></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 no-gutters">
+                <div class="right-connect">
+                    <div class="overlay-effect h-100 w-100"></div>
+                    
+                </div>
+            </div>
+        </div>
+
     </div>
 
-  </div>
+    <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.
 
-  </div>
+</body>
 
- 
- 
-  <!-- Contact -->
-  
-    <div class="section" id="connect-section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <!-- <h3><i class="mdi-content-send brown-text"></i></h3> -->
-          <h3 class="title"><em>Connect with Me</em></h3>
-          <p class="quote center-align white-text">Please connect with me on LinkedIn and GitHub. I also love connecting with fellow developers and people in general, so shoot me an email at the link below if you'd like to reach out.</p>
-          <div id="links"></div>
-            <a href="https://www.linkedin.com/in/mollyclaire/" target="_blank"><span style="color: white; font-size: 2rem"><i class="fab fa-linkedin-in"></i></span></a>
-            <a href="https://github.com/mollyclaire" target="_blank"><span style="color: white; font-size: 2rem"><i class="fab fa-github"></i></span></a>
-            <a href="mailto:mollyclaire.graham@gmail.com" target="_top"><span style="color: white; font-size: 2rem"><i class="fas fa-envelope"></i></span></a>
-        </div>
-        </div>
-      </div>
-
-    </div>
-  
- 
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/materialize.min.js"></script>
-
-    
-
-  </body>
 </html>
