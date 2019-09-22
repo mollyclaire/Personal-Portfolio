@@ -1,13 +1,12 @@
 html {
   box-sizing: border-box;
-  height: 100vh;
   scroll-behavior: smooth;
 }
 /* Home Page */
 .left {
   background-image: url("../images/bw-2.png");
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   position: relative;
 }
 .left:hover .overlay-effect {
@@ -27,7 +26,7 @@ html {
 }
 .right {
   width: 100%;
-  height: 50vh; 
+  height: 100vh; 
 }
 .links {
   display: flex;
@@ -77,7 +76,7 @@ display: inline-block;
 margin-bottom: 1.5em;
 }
 .quote-container {
-  height: 32vh;
+  max-height: 32vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,7 +90,7 @@ margin-bottom: 1.5em;
 /* About Me Page */
 .left-about {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,14 +99,12 @@ margin-bottom: 1.5em;
 }
 .right-about {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
 }
 .about-me {
   font-size: 4em;
   font-family: 'Montserrat', sans-serif;
   color: #3366cc;
-  /* writing-mode: vertical-rl;
-  text-orientation: sideways-right; */
   
 }
 .profile-about {
@@ -123,17 +120,23 @@ margin-bottom: 1.5em;
 /* Work Page */
 .left-work {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   border: 1px solid black;
 }
 .right-work {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   align-content: center;
   flex-wrap: wrap;
   margin-top: 6em;
+}
+.my-work {
+  font-size: 4em;
+  font-family: 'Montserrat', sans-serif;
+  color: #3366cc;
+  
 }
 .content {
   position: relative;
@@ -217,13 +220,23 @@ margin-bottom: 1.5em;
 }
 .left-connect {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   
+  
+}
+.left-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
 }
 .icons {
   margin: .5em;
@@ -246,7 +259,7 @@ a:visited {
 .right-connect {
   background-image: url("../images/connect.png");
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   position: relative;
   overflow: hidden
   
@@ -259,10 +272,73 @@ a:visited {
 }
 
 
-
-
-@media screen and (min-width: 768px) {
-  .left, .right, .left-about, .right-about, .right-work, .left-work, .right-connect, .left-connect {
-      height: 100vh;
+@media screen and (max-width:980px) {
+  .quote {
+      padding: 1em;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .left, .right, .left-about, .right-about, .right-work, .left-work, .right-connect, .left-connect {
+      height: 50vh;
+  }
+  /* .left-about {
+      margin-top: 15em;
+  }
+  .profile-about {
+      padding: 3em 5em 3em 5em;
+  }
+  .about-me {
+      margin-top: 15em;
+  }
+  .right-work {
+      margin-top: 15em;
+      
+  } */
+ 
+  
+}
+
+@media screen and (max-width: 640px) {
+  .title {
+      text-align: center;
+  }
+  .profile {
+      margin-top: 2em;
+  }
+  .quote-container {
+      margin-top: 2em;
+  }
+  .quote {
+      text-align: center;
+  }
+  /* .about-me {
+      margin-top: 5em;
+  } */
+  #about-link {
+      margin-top: 40em;
+  }
+  .profile-about {
+      padding: 3em;
+  }
+  #work-link {
+      margin-top: 20em;
+  }
+  .my-work {
+      margin-top: 0em;
+  }
+  .right-work {
+      margin-top: 37em;
+  }
+  #connect-section {
+      margin-top: 30em;
+  }
+  .left-container {
+      margin-top: 10em;
+  }
+  .left {
+    background-image: url("../images/bw-3.png");
+  
+  }
+  
 }
